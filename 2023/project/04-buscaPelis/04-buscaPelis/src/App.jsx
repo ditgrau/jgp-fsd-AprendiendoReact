@@ -1,22 +1,8 @@
-import responseMovies from './mocks/results.json'
+import { useMovies } from './hooks/useMovies'
 import { Movies } from './components/Movies'
 import './App.css'
 
-// esto es un custom hook 'use'
-export function useMovies () {
-  const movies = responseMovies.Search
-  //este mapeo crea un nuevo objeto para cada pelicula, con id, title, year y poster
-  const mappedMovies = movies?.map(movie => ({
-    // el operador ?se asegura de un true, descarta undefined y null
-    id: movie.imdbID,
-    title: movie.Title,
-    year: movie.Year,
-    poster: movie.Poster
-  }))
 
-  return {movies: mappedMovies}
-  //devuelve el objeto movies con el array de objetos mappedMovies
-}
 
 function App() {
 
