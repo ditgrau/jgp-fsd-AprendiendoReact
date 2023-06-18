@@ -8,12 +8,12 @@ const [isFollowing, setIsFollowing] = useState(false); //useState devuelve un ar
 
 const text = isFollowing ? 'Siguiendo' : 'Seguir' //ternaria, condicional
 //cuando en el renderizado, en la App, isFollowing es true: 'siguiendo' 
-const buttonClassName = isFollowing
-? 'tw-followCard-button is-following'
-: 'tw-followCard-button' 
+const buttonClassName = isFollowing //el boton es = al estado 'isFollowing'???
+? 'tw-followCard-button is-following' //SÍ, entonces css
+: 'tw-followCard-button' //NO, entonces este css
 
 const handleClick = () => {
-    setIsFollowing(!isFollowing)
+    setIsFollowing(!isFollowing) //la funcion del click va cambiando de true a false y viceversa
 }
     return (
         <article className='tw-followCard'>
