@@ -34,9 +34,18 @@
     border-radius: 1.2rem;
     padding: 0.6rem 1.2rem;
     font-weight: bold;
+    transition: 0.5s ease background-color; /*ease:funcion de temporizacion */
+}
+.tw-followCard-button.is-following {
+    border: 0.2rem solid rgb(32, 72, 146);
+    background-color: rgb(26, 26, 73);
+    color: white
 }
 
 .tw-followCard-button:hover {
     background-color:darkcyan;
-    transition: 0.5s ease background-color; /*ease:funcion de temporizacion */
+}
+
+.tw-followCard-button.is-following:hover {
+    background-color: rgb(129, 217, 255);
 }
