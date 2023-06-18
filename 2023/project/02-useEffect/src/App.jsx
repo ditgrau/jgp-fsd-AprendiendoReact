@@ -4,19 +4,34 @@ import './App.css'
 function App() {
 
   const [enabled, setEnable] = useState(false)
-const [position, setPosition] = useState({x: 0, y: 0})
+  const [position, setPosition] = useState({ x: 0, y: 0 })
+
   useEffect(() => {
+
     console.log('effect ', { enabled })
 
     const handleMove = (event) => {
       const { clientX, clientY } = event
-      setPosition({x:clientX , y:clientY})
+      setPosition({ x: clientX, y: clientY })
     }
 
     if (enabled) {
       window.addEventListener('pointermove', handleMove)
     }
+
+    return () => {
+      window.removeEventListener('pointermove', handleMove)
+    }
+
   }, [enabled]) //dependencia del efecto. Este solo se ejecutara cuando el valor de la dependencia cambie
+
+  useEffect(() => {
+    document.body.classList.toggle('no-cursor', enabled)
+
+    return () => {
+      document.body.classList.remove('no-cursor')
+    }
+  }, [enabled])
 
   return (
     <main>
@@ -25,7 +40,7 @@ const [position, setPosition] = useState({x: 0, y: 0})
         backgroundColor: '#ff8000',
         borderRadius: '50%',
         opacity: 0.6,
-        pointerEvent: 'none',
+        pointerEvents: 'none',
         left: -20,
         top: -20,
         width: 40,
@@ -34,8 +49,7 @@ const [position, setPosition] = useState({x: 0, y: 0})
       }}>
 
       </div>
-      <button onClick={() => setEnable(!enabled)
-      }>
+      <button onClick={() => setEnable(!enabled)}>
         {enabled ? 'Desactivar' : 'Activar'}</button>
     </main>
   )
