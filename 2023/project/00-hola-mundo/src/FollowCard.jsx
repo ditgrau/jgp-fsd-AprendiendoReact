@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import './FollowCard.css'
 
-export function FollowCard({ children , alias = 'unknown' }) {
+export function FollowCard({ children , alias = 'unknown', initialIsFollowing }) {
 
-const [isFollowing, setIsFollowing] = useState(false); //useState devuelve un array de dos posiciones con valor y funcion que actualiza el valor
+const [isFollowing, setIsFollowing] = useState(initialIsFollowing); //useState devuelve un array de dos posiciones con valor y funcion que actualiza el valor
 // lo de dentro del parentesis de useSatet es el valor INICIAL
 
 const text = isFollowing ? 'Siguiendo' : 'Seguir' //ternaria, condicional
