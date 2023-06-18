@@ -1,10 +1,14 @@
 import './App.css'
 import { FollowCard } from './FollowCard'
 
+
 export function App() {
+
+    const ditgrau = {isFollowing: true, alias: 'ditGrau'};
+
     return (
         <div className='containerCards'>
-            <FollowCard alias='ditGrau' isFollowing>
+            <FollowCard {...ditgrau}>
                 Judit Grau
             </FollowCard>
             <FollowCard isFollowing={false}>
