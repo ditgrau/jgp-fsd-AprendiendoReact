@@ -3,7 +3,7 @@ const TURNS = {
   O: 'O'
 }
 
-const board = Array(9).fill(null)
+
 
 const Square = ({children, updateBoard, index}) => {
   return(
@@ -14,6 +14,9 @@ const Square = ({children, updateBoard, index}) => {
 }
 
 function App() {
+
+  const [board, setBoard] = useState(Array(9).fill(null))
+  
   return (
     <main className='board'>
       <h1>TIC TAC TOE</h1>
@@ -23,7 +26,7 @@ function App() {
             <Square
             key={index}
             index={index}>
-                {index}
+                
             </Square>
           )
         })
