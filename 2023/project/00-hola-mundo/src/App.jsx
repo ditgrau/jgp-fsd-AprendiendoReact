@@ -5,20 +5,38 @@ import { FollowCard } from './FollowCard';
 
 export function App() {
 
-    const ditgrau = { alias: 'ditGrau' };
+    const users = [
+        {
+            userName: 'Judit Grau',
+            alias: 'ditGrau',
+            isFollowing: true
+        },
+        {
+            userName: 'Rocio Sendros',
+            alias: 'Rowi',
+            isFollowing: false
+        },
+        {
+            userName: 'Jose Sanchez',
+            alias: 'JSanchez',
+            isFollowing: true
+        },
+    ]
 
     return (
-        <div className='containerCards'>
-            <FollowCard {...ditgrau} isFollowing>
-                Judit Grau
-            </FollowCard>
-            <FollowCard >
-                Miguel Angel Duran
-            </FollowCard>
-            <FollowCard alias='datata'>
-                Daniel Profe
-            </FollowCard>
-            {/* isFollowing es un boleano, al ponerlo sin value por default es true, para darle valor: expresion, entre LLAVES. */}
+        <div className='containerCards'> {
+            users.map(user => {
+                const { userName, alias, isFollowing } = user
+
+                return (
+                    <FollowCard
+                        alias={alias}
+                        isFollowing={isFollowing}>
+                            {userName}
+                    </FollowCard>
+                )
+            })
+        }
         </div>
     )
 }
