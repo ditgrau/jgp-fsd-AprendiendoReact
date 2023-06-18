@@ -1,8 +1,15 @@
 
 export function App() {
     return (
-        <div>
-            <h1>Twitter card</h1>
-        </div>
+        <article>
+            <header>
+                <img alt='avatar' src='https://unavatar.io/ditgrau'></img>
+                <div>
+                    <strong>Judit Grau Puigdoller</strong>
+                    <span>@ditGrau</span>
+                </div>
+            </header>
+        </article>
+
     )
 }
