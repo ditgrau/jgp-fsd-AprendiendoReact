@@ -7,12 +7,18 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className='page'>
+    <header>
       <h1>BUSCADOR DE PELICULAS</h1>
-      <form className= 'form'>
+      <form className='form'>
         <input placeholder='Lilo & Stitch, Buscando a Nemo...'></input>
+        <button type='submit'>Buscar</button>
       </form>
-    </>
+    </header>
+    <main>
+
+    </main>
+    </div>
   )
 }
 

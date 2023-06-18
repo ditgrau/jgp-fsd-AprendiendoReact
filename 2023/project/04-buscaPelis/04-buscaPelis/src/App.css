@@ -5,3 +5,21 @@
   text-align: center;
 }
 
+.page {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display:flex;
+  justify-content: center;
+}
+
+form {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}

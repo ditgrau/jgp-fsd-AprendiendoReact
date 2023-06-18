@@ -1,0 +1,76 @@
+{
+    "Search": [
+        {
+            "Title": "Lilo & Stitch",
+            "Year": "2002",
+            "imdbID": "tt0275847",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BYTY5MGE4MjEtNTMzYy00ODAxLWFiNDQtNzhlOGJiZWIzNDhkXkEyXkFqcGdeQXVyNTM5NzI0NDY@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Lilo & Stitch 2: Stitch Has a Glitch",
+            "Year": "2005",
+            "imdbID": "tt0457993",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMTUzMTAwMjg2M15BMl5BanBnXkFtZTcwMzQyMjAzMQ@@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Lilo & Stitch: The Series",
+            "Year": "2003–2006",
+            "imdbID": "tt0364774",
+            "Type": "series",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BYjcxM2ZlN2MtMzBlYS00MzVjLWJmNzMtOGVjZDczYTVjNWUzXkEyXkFqcGdeQXVyNjk1Njg5NTA@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Lilo & Stitch's Island of Adventures",
+            "Year": "2003",
+            "imdbID": "tt0388203",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNDMyODA4YjYtZTdiOS00NmU4LWI4YWItZTdlMjYyYjZkM2M1XkEyXkFqcGdeQXVyNjQyNzU5NzU@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Lilo & Stitch",
+            "Year": "2002",
+            "imdbID": "tt0335260",
+            "Type": "game",
+            "Poster": "N/A"
+        },
+        {
+            "Title": "The Story Room: The Making of 'Lilo & Stitch'",
+            "Year": "2005",
+            "imdbID": "tt1294217",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMTM0NTg5Mjc3M15BMl5BanBnXkFtZTcwOTk1NTY5MQ@@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Angesichts ihrer fatalen Veranlagung scheidet Lilo Wanders freiwillig aus dem Leben",
+            "Year": "1994",
+            "imdbID": "tt0403844",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BZGU4MWNiZTgtZTliYS00YWJmLWFjMTctMjlkM2ZhODQ5ODZiXkEyXkFqcGdeQXVyMzA4NzgzMw@@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Lilo & Fredi",
+            "Year": "2004",
+            "imdbID": "tt0774761",
+            "Type": "movie",
+            "Poster": "N/A"
+        },
+        {
+            "Title": "Shirley Lilo: Come to Me",
+            "Year": "2008",
+            "imdbID": "tt5169064",
+            "Type": "movie",
+            "Poster": "N/A"
+        },
+        {
+            "Title": "Lilo & Stitch: Hawaiian Adventure",
+            "Year": "2002",
+            "imdbID": "tt6456834",
+            "Type": "game",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BODM2NmRmMjAtYjg0My00NWFlLTg2MmYtN2UyMTVlYmRkZTE5XkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_SX300.jpg"
+        }
+    ],
+    "totalResults": "16",
+    "Response": "True"
+}
