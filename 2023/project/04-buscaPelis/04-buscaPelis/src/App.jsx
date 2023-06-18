@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import responseMovies from './mocks/results.json'
+import withoutResults from './mocks/no-results.json'
 import './App.css'
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
       </form>
     </header>
     <main>
-
+  AQUI VAN LAS PELIS
     </main>
     </div>
   )
