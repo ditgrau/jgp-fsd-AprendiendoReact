@@ -5,14 +5,12 @@ function ListOfMovies({ movies }) {
         <ul>
             {/* devolvemos una lista desordenada */}
             {
-                movies.map(movie => ( 
-                    //map porque es un array de objetos, cada elemento del array es 'movie'
-                    //pongo directamente () porque es el valor a retornar, lleva implicito el return
-                    <li key={movie.imdbID}>
-                        {/* por cada movie devuelvo un elemento de la lista 'ul' */}
-                        <h2>{movie.Title}</h2>
-                        <p>{movie.Type}</p>
-                        <img src={movie.Poster} alt={movie.Title} />
+                movies.map(movie => (
+                    <li key={movie.id}>
+                        {/* las propiedades ya no llaman al objeto de la API llaman a mi mappedMovies */}
+                        <h2>{movie.title}</h2>
+                        <p>{movie.year}</p>
+                        <img src={movie.poster} alt={movie.title} />
                     </li>
                 ))
             }
@@ -33,8 +31,8 @@ export function Movies({ movies }) {
 
     return (
         //devolvemos la constante hasMovies, si viene con TRUE
-    hasMovies
-        ? <ListOfMovies movies={movies}/>
-        : <NoMoviesResults/>
+        hasMovies
+            ? <ListOfMovies movies={movies} />
+            : <NoMoviesResults />
     )
 }

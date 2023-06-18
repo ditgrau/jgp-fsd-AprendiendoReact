@@ -3,9 +3,16 @@ import { Movies } from './components/Movies'
 import './App.css'
 
 function App() {
-//aqui deberia ir la busqueda de la API (?)
+
 const movies = responseMovies.Search
-//este es el objeto que le pasamos a ListOfMovies de argumento, es un array de objetos
+//lo que hago con el mappedMovies es transformar los datos de la API a como yo quiera nombrarlos para no depender tanto de la API, y en el caso de cambiar, solo cambiarlo aqui
+const mappedMovies = movies?.map(movie => ({
+  id: movie.imdbID,
+  title: movie.Title,
+  year: movie.Year,
+  poster: movie.Poster
+}))
+
   return (
     <div className='page'>
       <header>
@@ -16,7 +23,7 @@ const movies = responseMovies.Search
         </form>
       </header>
       <main>
-        <Movies movies={movies}/>
+        <Movies movies={mappedMovies}/>
       </main>
     </div>
   )
