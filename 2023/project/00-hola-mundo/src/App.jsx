@@ -13,7 +13,7 @@ export function App() {
         },
         {
             userName: 'Rocio Sendros',
-            alias: 'Rowi',
+            alias: 'rowi_roowi',
             isFollowing: false
         },
         {
@@ -30,9 +30,10 @@ export function App() {
 
                 return (
                     <FollowCard
+                        key={alias}
                         alias={alias}
-                        isFollowing={isFollowing}>
-                            {userName}
+                        initialIsFollowing={isFollowing}>
+                        {userName}
                     </FollowCard>
                 )
             })
