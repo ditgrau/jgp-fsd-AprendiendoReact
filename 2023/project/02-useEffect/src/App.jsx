@@ -28,6 +28,7 @@ function App() {
   useEffect(() => {
     document.body.classList.toggle('no-cursor', enabled)
 
+    // el return como clean-up, un callback que contiene la logica para limpiar la suscripcion, se ejecutara cada vez que la dependencia cambie de valor, si es un array vacio, solo se ejecutara una vez cuando el componente se desmonte
     return () => {
       document.body.classList.remove('no-cursor')
     }
