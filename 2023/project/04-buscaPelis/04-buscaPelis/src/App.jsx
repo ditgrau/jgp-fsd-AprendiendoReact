@@ -1,11 +1,11 @@
 import responseMovies from './mocks/results.json'
-import withoutResults from './mocks/no-results.json'
+import { Movies } from './components/Movies'
 import './App.css'
 
 function App() {
-  const movies = responseMovies.Search
-  const hasMovies = movies?.length > 0
-
+//aqui deberia ir la busqueda de la API (?)
+const movies = responseMovies.Search
+//este es el objeto que le pasamos a ListOfMovies de argumento, es un array de objetos
   return (
     <div className='page'>
       <header>
@@ -16,25 +16,7 @@ function App() {
         </form>
       </header>
       <main>
-        {
-          hasMovies
-            ? (
-              <ul>
-                {
-                  movies.map(movie => (
-                    <li key={movie.imdbID}>
-                      <h2>{movie.Title}</h2>
-                      <p>{movie.Type}</p>
-                      <img src={movie.Poster} alt={movie.Title}/>
-                    </li>
-                  ))
-                }
-              </ul>
-            )
-            : (
-             <p>No se han encontrado resultados</p> 
-            )
-  }
+        <Movies movies={movies}/>
       </main>
     </div>
   )
