@@ -12,7 +12,7 @@ export function FollowCard({ children, alias = 'unknown', initialIsFollowing }) 
         ? 'tw-followCard-button is-following' //SÍ, entonces css
         : 'tw-followCard-button' //NO, entonces este css
 
-    const handleClick = () => {
+    const handleClick = () => { //en el handle va el set del useState
         setIsFollowing(!isFollowing) //la funcion del click va cambiando de true a false y viceversa
     }
     return (
