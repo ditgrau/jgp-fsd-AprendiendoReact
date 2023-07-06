@@ -33,6 +33,7 @@ function App() {
       document.body.classList.remove('no-cursor')
     }
   }, [enabled])
+  
 
   return (
     <main>
